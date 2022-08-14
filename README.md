@@ -5,6 +5,7 @@ Python 2/3 library for the [anti-captcha](https://l33t.ltd) web site
 
 ## Installation
 type *pip install l33tapi==1.0.2* in cmd and wait for loading
+or install from pipy: https://pypi.org/project/l33tapi/1.0.2/
 
 ### Getting APi key
 Register at [l33t website](https://l33t.ltd). Go to the main page and click Profile. Follow "Infromation" tab. Here you can see your API key and balance in rubles(₽)
