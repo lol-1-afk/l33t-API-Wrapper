@@ -16,4 +16,11 @@ Register at [l33t website](https://l33t.ltd). Go to the main page and click Prof
 - solve REcaptcha
 - solve image captcha
 
-the happy end
+# Examples
+## Get balance
+```python
+import lib
+
+solver = ApiWrapper("84676dcbe7db732fea47251c7750ecdf")
+print(solver.get_balance())
+```
