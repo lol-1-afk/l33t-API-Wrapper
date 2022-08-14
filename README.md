@@ -4,8 +4,8 @@
 Python 2/3 library for the [anti-captcha](https://l33t.ltd) web site
 
 ## Installation
-type *pip install l33tapi==1.0.2* in cmd and wait for loading 
-> or install from pipy: https://pypi.org/project/l33tapi/1.0.2/
+type *pip install l33tapi* in cmd and wait for loading 
+> or install from pipy: https://pypi.org/project/l33tapi
 
 ### Getting APi key
 Register at [l33t website](https://l33t.ltd). Go to the main page and click Profile. Follow "Infromation" tab. Here you can see your API key and balance in rubles(₽)
@@ -27,7 +27,7 @@ Register at [l33t website](https://l33t.ltd). Go to the main page and click Prof
 ```python
 import l33tapi
 
-solver = ApiWrapper("your-api-key")
+solver = l33tapi.ApiWrapper("your-api-key")
 print(solver.get_balance())
 ```
 
@@ -36,7 +36,7 @@ print(solver.get_balance())
 ```python
 import l33tapi
 
-solver = ApiWrapper("your-api-key")
+solver = l33tapi.ApiWrapper("your-api-key")
 print(solver.get_key())
 ```
 
@@ -44,7 +44,7 @@ print(solver.get_key())
 ```python
 import l33tapi
 
-solver = ApiWrapper("your-api-key-1")
+solver = l33tapi.ApiWrapper("your-api-key-1")
 solver.update_key("your-api-key2")
 ```
 
@@ -52,7 +52,7 @@ solver.update_key("your-api-key2")
 ```python
 import l33tapi
 
-solver = ApiWrapper("your-api-key")
+solver = l33tapi.ApiWrapper("your-api-key")
 all_threads = solver.get_threads()
 free_threads = solver.get_free_threads()
 pinr(f"{all_threads} threads are possible and {free_threads} are free")
@@ -63,7 +63,7 @@ pinr(f"{all_threads} threads are possible and {free_threads} are free")
 ```python
 import l33tapi
 
-solver = ApiWrapper("your-api-key")
+solver = l33tapi.ApiWrapper("your-api-key")
 cap_data = solver.solve_recaptcha(cap_version=2, sitekey="6Le-wvkSAAAAAPBMRTvw0Q4Muexq9bi0DJwx_mJ-",
                                   is_json=1, page_url="https://www.google.com/recaptcha/api2/demo")
 captcha_id = cap_data["request"]
@@ -74,7 +74,7 @@ captcha_id = cap_data["request"]
 ```python
 import l33tapi
 
-solver = ApiWrapper("your-api-key")
+solver = l33tapi.ApiWrapper("your-api-key")
 cap_data = solver.solve_recaptcha(cap_version=3, k_value="6LfwIo4UAAAAADauXCK0Ke_jIWNSW-z49N-IUj43",
                                   is_json=1, page_url="https://demo.codeforgeek.com/recaptcha-v3/")
 captcha_id = cap_data["request"]
@@ -84,7 +84,7 @@ captcha_id = cap_data["request"]
 ```python
 import l33tapi
 
-solver = ApiWrapper("your-api-key")
+solver = l33tapi.ApiWrapper("your-api-key")
 cap_data = solver.solve_imgcaptcha(captcha_str="long_base64_string_of_captcha", is_json=1)
 captcha_id = cap_data["request"]
 ```
@@ -93,6 +93,6 @@ captcha_id = cap_data["request"]
 ```python
 import l33tapi
 
-solver = ApiWrapper("your-api-key")
+solver = l33tapi.ApiWrapper("your-api-key")
 print(solver.get_cap_answer(cap_id=326119, is_json=1))  # cap_id is captcha_id from the previous exmaples
 ```
