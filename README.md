@@ -63,7 +63,7 @@ cap_data = solver.solve_recaptcha(cap_version=2, sitekey="6Le-wvkSAAAAAPBMRTvw0Q
 captcha_id = cap_data["request"]
 ```
 
-## Send REcapthca v3 to server
+## Send REcaptcha v3 to server
 
 ```python
 import lib
