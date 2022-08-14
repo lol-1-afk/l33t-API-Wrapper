@@ -75,6 +75,7 @@ captcha_id = cap_data["request"]
 ```
 
 ## Sending image captcha to server
+```python
 import lib
 
 solver = ApiWrapper("your-api-key")
