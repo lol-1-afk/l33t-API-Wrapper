@@ -20,7 +20,7 @@ Register at [l33t website](https://l33t.ltd). Go to the main page and click Prof
 - solve REcaptcha
 - solve image captcha
 
-## Official APi doc is avialable [here](https://l33t.ltd/doc)
+## Official APi doc is avialable [here](https://l33t.ltd/docs)
 
 # Examples
 ## Get balance
